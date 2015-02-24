@@ -14,13 +14,13 @@
 	
 </head>
 <body>
-	<header>
+	<header class="header">
 		header
 	</header>
-	<nav>
+	<nav class="navigation">
 		nav
 	</nav>
-	<section>
+	<section class="content">
 		section
 		<header>
 			header
@@ -32,10 +32,10 @@
 			footer
 		</footer>
 	</section>
-	<aside>
+	<aside class="sidebar"> 
 		aside
 	</aside>
-	<footer>
+	<footer class="footer">
 		footer
 	</footer>
 </body>
