@@ -6,8 +6,8 @@ movie4 = new Movie ("Whiplash");*/
 /* MOVIE OBSERVER */
 movieObserver = function(){
 	this.playing  = function(theTitle){
-		this.title = theTitle;
-		console.log("Playing: " + title + "!!");
+		
+		console.log("Playing: " + theTitle + "!!");
 	},
 	this.stopped  = function(theTitle){
 		this.title = theTitle;
@@ -48,6 +48,7 @@ function Actors(theName){
 function Movie (theTitle){
 	DownloadableMovie.call(this);
 	Social.call(this);
+	var title;
 	this.title = theTitle;
 
 }
