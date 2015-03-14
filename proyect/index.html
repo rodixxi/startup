@@ -1,16 +1,52 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
 
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Index.html</title>
-	<meta name="author" content="Crespillo Rodrigo Andres"/>
-	<link href="normalize.css" rel="stylesheet">
-	<link href="style.css" rel="stylesheet">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Index.html</title>
+    <meta name="author" content="Crespillo Rodrigo Andres" />
+   	<link href="libs/normalize.css" rel="stylesheet">
+   	<!--  <link href="libs/requiere.js">  -->
+   	<script src="http://code.jquery.com/jquery-2.1.3.js"></script>
+   	<script src="libs/handlebars-v3.0.0.js"></script>
+    <link href="style/phone.css" rel="stylesheet">
+    <link href="style/main.css" rel="stylesheet">
+	<!--  <script src="js/token.js"></script>  -->
+	<script src="js/tokenSearch.js"></script>
+	<script src="libs/require.js" data-main="js/app"></script>
 
-	
 </head>
+
+<body>
+	<header class="header">
+		<div class="header_inner">
+			<img class="header_logo" src="logo/logoPNGmenu.png">
+			<h1 class="header_title"> Spotify API</h1>
+		</div>
+	</header>
+	<nav class="nav">
+		<ul class="nav_list">
+			<li class="nav_item">
+				<a href="#">My Playlist</a>
+			</li>
+		</ul>
+	</nav>
+    <main>
+    	<section class="searchBox">
+    		<input id="search" type=search name=s results=5 placeholder=Search...>
+    	</section>
+		<section class="content">
+			<section class="playlist">
+				<p>Hola</p>
+			</section>
+			<section class="list"></section>
+		</section>
+		<footer>
+			
+		</footer>
+    </main>
+</body>
+
 </html>
