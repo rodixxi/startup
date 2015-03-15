@@ -8,7 +8,7 @@
     flex-wrap: wrap;
 }
 @media screen and (min-width: 850px) {
-    .main, .header_inner, .search, .content, .nav {
+    .main, .header_inner, #search, .content, .nav {
         width: 850px;
         margin-left: auto;
         margin-right: auto;

@@ -1,7 +1,7 @@
-define('getToken', ['jquery'], function(ini) {
+define(['jquery'], function($) {
     $(function() {
         var API = {
-                accessToken: 'BQAS6ut_VvceNdgciDhAS0eyniPLY6ZEkqpEFo8bXLawRv12SEkbe89gAARyBBbbm1mbAOiXYAnuACcfXJhBeJ5JHhQWwn8XRrB4sVSsTuL988_szT3FuAPIiF915m_wGVUBUwhaxOnp&token_type=Bearer&expires_in=3600',
+                accessToken: 'BQDoAy2z8lsWnLHzioF9iabEq0vSpJeLN6YfakucnhbqeWb29MQC7tzUnt9XSeu20OEEDB4hSoQkg6Yu8fXKjweK9F5fs57DghbUmMPghBWGfo5ZBhQmwX7j80BiuN7vKUeyuAH_FV55',
                 base: 'https://api.spotify.com'
             },
             req = function(endpoint) {
@@ -17,8 +17,6 @@ define('getToken', ['jquery'], function(ini) {
                 console.log(data);
             };
 
-        req(API.base + ini);
-
-        return data;
+        return req(API.base + ini);
     });
 });
