@@ -7,7 +7,8 @@ requirejs.config({
 
 requirejs(['jquery', 'getToken', 'search'], 
 	function($, getToken, search) {
-		var ini = '/v1/search?q='+ search +'&type=artist';
+		var ini = '/v1/search?q=Adele&type=artist';
+		console.log(ini);
 		var obj = getToken.get(ini);
 		console.log(obj);
 });
