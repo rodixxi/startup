@@ -2,50 +2,76 @@
 <html lang="en">
 
 <head>
-
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Index.html</title>
     <meta name="author" content="Crespillo Rodrigo Andres" />
-   	<link href="libs/normalize.css" rel="stylesheet">
-   	
-   	<script src="libs/jquery-2.1.3.js"></script>
-   	<script src="libs/handlebars-v3.0.0.js"></script>
+    <link href="libs/normalize.css" rel="stylesheet">
+    <script src="libs/jquery-2.1.3.js"></script>
+    <script src="libs/handlebars-v3.0.0.js"></script>
     <link href="style/phone.css" rel="stylesheet">
     <link href="style/main.css" rel="stylesheet">
-	
-	
-	<script src="libs/require.js" data-main="js/app"></script>
-
+    <script src="style/animate.js"></script>
+    <!--<script src="libs/require.js" data-main="js/app"></script> <script src="js/scratch.js"></script>-->
 </head>
 
 <body>
-	<header class="header">
-		<div class="header_inner">
-			<img class="header_logo" src="logo/logoPNGmenu.png">
-			<h1 class="header_title"> Spotify API</h1>
-		</div>
-	</header>
-	<nav class="nav">
-		<ul class="nav_list">
-			<li class="nav_item">
-				<a href="#">My Playlist</a>
-			</li>
-		</ul>
-	</nav>
+    <header class="header">
+        <div class="header_inner">
+            <img class="header_logo" src="logo/logoPNGmenu.png">
+            <h1 class="header_title"> Spotify API</h1>
+        </div>
+    </header>
+    <nav class="nav">
+        <ul class="nav_list">
+            <li class="nav_item">
+                <a href="#">My Playlist</a>
+            </li>
+        </ul>
+    </nav>
     <main>
-    	<section class="searchBox">
-    		<input id="search" type=search name=s results=5 placeholder=Search...>
-    	</section>
-		<section class="content">
-			<section class="playlist">
-				<p>Hola</p>
-			</section>
-			<section class="list"></section>
-		</section>
-		<footer>
-			
-		</footer>
+        <section class="searchBox">
+            <input id="search" type=search name=s results=5 placeholder=Search...>
+            <select  id="type" name="type">
+                <option value="track">Track</option>
+                <option value="album">Album</option>
+                <option value="artist">Artist</option>
+                <option value="playlist">Playlist</option>
+            </select>
+        </section>
+        <section class="content">
+            <section class="list_header">
+                <ul>
+                    <li>Track</li>
+                    <li>Artist</li>
+                    <li>Duration</li>
+                    <li>Album</li>
+                </ul>
+                </ul>
+            </section>
+            <section class="playlist" id="search_list">
+                <ul>
+                    <!--	<script script id="entry-template" type="text/x-handlebars-template">
+						{{#list nav}}
+							<li>{{Track}}</li>
+							<li>{{Artist}}</li>
+							<li>{{Duration}}</li>
+							<li>{{Album}}</li>
+						{{/list}}
+					</script>-->
+                </ul>
+            </section>
+            <section class="playlist" id="music_list">
+            	<section class="playlist_list"></section>
+            		<select  id="playlist_select" name="type">
+							<option value="playlist1">playlist1</option>
+                 			<option value="playlist2">playlist2</option>
+            		</select>
+            </section>
+            
+        </section>
+        <footer>
+        </footer>
     </main>
 </body>
 

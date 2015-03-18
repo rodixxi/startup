@@ -1,7 +1,7 @@
 define(['jquery'], function($) {
     
         var API = {
-            accessToken: 'BQDGvNuJEWAdF029zIvYdbAOxjwlatNEBG5BsPpizus_9_yNPXSLA2QMOgQruGzyTM73YSNuTdnzf4pNyVYaKjLE-K8ZS-UKE3g21UicLZDVgubB9FPOhHv7TNogIb9heda6aN_1hY0R',
+            accessToken: 'BQBFppZpNdb2mMaZzajvKk7JQ-klAQ60Jmm2KUs9w1456MM9kx4D_so0CrfVlkF2A86QX4jn-DHavOcz9h6pIVeuFl-o6kgF00Egcc_skrjmKxua7y-ZxmpDgLUeBbkn9EkBhHw3LOfN',
             base: 'https://api.spotify.com'
             },
         req = function(endpoint) {
@@ -20,7 +20,7 @@ define(['jquery'], function($) {
         }
     
     return {
-        obj:obj,
+        //obj:obj,
         get: function(dir) {
             req(API.base + dir)
         },
