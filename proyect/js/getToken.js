@@ -1,7 +1,7 @@
 define(['jquery'], function($) {
     
         var API = {
-            accessToken: 'BQBFppZpNdb2mMaZzajvKk7JQ-klAQ60Jmm2KUs9w1456MM9kx4D_so0CrfVlkF2A86QX4jn-DHavOcz9h6pIVeuFl-o6kgF00Egcc_skrjmKxua7y-ZxmpDgLUeBbkn9EkBhHw3LOfN',
+            accessToken: 'BQBbFek1_spsMlZROaGEFv6UNtQ1nIs8djwJLvF4hl--KaR9sebeXmF7-CZ7A-ISeYl87jcimr1fiI1vLW5NgzmPJDmZLCBAEcaI1be5yHTliWI6j5vjIVPKgRDyf53rTIZL_ilZ4HpL',
             base: 'https://api.spotify.com'
             },
         req = function(endpoint) {
@@ -14,13 +14,16 @@ define(['jquery'], function($) {
             }).done(res);
         },
         res = function(data) {
-            console.log(data);
-            var obj = data;
+            localStorage.setItem('getData', JSON.stringify(data));
+            
+            var obj = JSON.parse(localStorage.getItem('getData'));
             console.log(obj);
+            console.log(obj.tracks.items.length);
+            
         }
     
     return {
-        //obj:obj,
+        
         get: function(dir) {
             req(API.base + dir)
         },
