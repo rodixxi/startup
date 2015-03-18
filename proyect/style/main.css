@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+}
+.header {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+  min-height: 56px;
+  transition: min-height 0.3s;
+}
+header, nav, footer, section, article, div {
+  box-sizing: border-box;
+}
+.header__inner {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.header__logo {
+  height: 72px;
+  margin-right: 1em;
+  vertical-align: top;
+  margin-top: 12px;
+}
+.header__title {
+  font-weight: 300;
+  font-size: 3em;
+  margin: 0.75em 0.25em;
+  display: inline-block;
+  color: #212121;
+}
+h1, h2, h3, h4, h5 {
+  margin: 0;
+}
+.content{
+  width: 100%;
+}
+.list_header{
+  width: 100%
+}
+.playlist{
+	width: 50%;
+  min-height: 700px;
+  margin-bottom: auto 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+#music_list{
+  background-color: red;
+  
+}
+#search_list{
+  background-color: blue;
+  
+}
+#playlist_select{
+  height: 48px;
+  width: 100%;
+}
